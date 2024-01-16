@@ -14,6 +14,10 @@ body{
   display: none;
 }
 
+#page_3{
+  display: none;
+}
+
 .first_title{
   color: #3c4142;
   width: 100%;

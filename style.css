@@ -255,7 +255,7 @@ body{
 }
 
 .card-body {
-  border: 3px solid #f45a40;
+  /*border: 3px solid #f45a40;*/
   border-radius: 1rem;  
 }
 

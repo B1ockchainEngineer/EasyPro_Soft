@@ -29,7 +29,7 @@ function myFunction() {
     table = document.getElementById("myTable");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
-        div = tr[i].getElementsByTagName("div")[0];
+        div = tr[i].getElementsByTagName("a")[0];
         if (div) {
         txtValue = div.textContent || div.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {

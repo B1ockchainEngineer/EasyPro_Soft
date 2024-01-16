@@ -35,7 +35,7 @@
                                     <div class="">
                                         <div>
                                             <input type="text" placeholder="Search..." class="form-control" id="search"
-                                                name="search" onkeyup="myFunction()">
+                                                name="search" onkeyup="search()">
                                         </div>
 
                                     </div>
@@ -60,10 +60,10 @@
                                                 <div class="result-actions">
                                                     <div class="result-sorting">
                                                         <span>Category:</span>
-                                                        <select class="form-control border-0" id="exampleOption">
-                                                            <option value="1">Chapter</option>
-                                                            <option value="2">Mail Merge</option>
-                                                            <option value="3">File Master</option>
+                                                        <select class="form-control border-0" id="categoryOption" onchange="category()">
+                                                            <option value="chapter">Chapter</option>
+                                                            <option value="merge">Merge</option>
+                                                            <option value="file master">File Master</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -73,9 +73,24 @@
                                     <div class="result-body" id="mySearch">
                                         <div class="table-responsive">
                                             <table class="table widget-26" id="myTable">
+                                                
+                                                <thead style="outline-style: solid;">
+                                                    <td>
+                                                        <div class="chapter" style="font-weight: bold;">
+                                                            <p>Category</p>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="chapter" style="font-weight: bold;">
+                                                            <p>Subject</p>
+                                                        </div>
+                                                    </td>
+                                                </thead>
+                                                
                                                 <tbody>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 01</p>
@@ -111,7 +126,7 @@
 
                                                     </tr>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
 
                                                         <td>
                                                             <div class="chapter">
@@ -140,7 +155,7 @@
 
                                                     </tr>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 03</p>
@@ -170,7 +185,7 @@
 
                                                     </tr>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 04</p>
@@ -191,7 +206,7 @@
 
                                                     </tr>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 05</p>
@@ -205,12 +220,24 @@
                                                                             target="_blank">Billing</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>Create New Quotation</li>
+                                                                    <li>Manage Quotation</li>
+                                                                    <li>Quotation Posting</li>
+                                                                    <li>Manage Bill</li>
+                                                                    <li>Bill Undo Pasting</li>
+                                                                    <li>New Time Cost Record</li>
+                                                                    <li>Manage Time Cost</li>
+                                                                    <li>New and Manage A/R Credit Note</li>
+                                                                    <li>New and Manage A/R Debit Note</li>
+                                                                    <li>New and Manage Past Bill</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 06</p>
@@ -224,12 +251,20 @@
                                                                             target="_blank">Payment Voucher</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>Payment Voucher (Office Account)</li>
+                                                                    <li>Payment Voucher (Clients' Account)</li>
+                                                                    <li>Account Payable Payment</li>
+                                                                    <li>Cheque Return Function</li>
+                                                                    <li>Manage Returned Cheque</li>
+                                                                    <li>Payment Voucher Approval</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_1">
+                                                    <tr id="page_1 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 07</p>
@@ -243,13 +278,18 @@
                                                                             target="_blank">File</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>Create New File</li>
+                                                                    <li>Manage File</li>
+                                                                    <li>Copy File Details</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 08</p>
@@ -263,12 +303,18 @@
                                                                             target="_blank">AP</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>New and Manage Supplier</li>
+                                                                    <li>New and Manage Invoice</li>
+                                                                    <li>New and Manage A/P Credit Note</li>
+                                                                    <li>New and Manage A/P Debit Note</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 09</p>
@@ -282,12 +328,19 @@
                                                                             target="_blank">Receipt</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>Receipt</li>
+                                                                    <li>A/R Receipt</li>
+                                                                    <li>Contra Bill</li>
+                                                                    <li>Cheque Returned Function</li>
+                                                                    <li>Manage Returned Cheque</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 10</p>
@@ -301,12 +354,19 @@
                                                                             target="_blank">Transfer</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>New and Manage File Fund Transfer (Clients' Account)</li>
+                                                                    <li>New and Manage Bank Fund Transfer</li>
+                                                                    <li>New Trust Transfer(FD)</li>
+                                                                    <li>New FD Transfer</li>
+                                                                    <li>Manage Trust Transfer</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 11</p>
@@ -320,12 +380,19 @@
                                                                             target="_blank">GL</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>New and Manage Journal (Office Account)</li>
+                                                                    <li>New and Manage Journal (Clients' Account)</li>
+                                                                    <li>Manage Bank Recon</li>
+                                                                    <li>New Unpresented Cheque (Office and Client's Account)</li>
+                                                                    <li>Manage Unpresented Cheque</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 12</p>
@@ -339,12 +406,16 @@
                                                                             target="_blank">Tax</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>SST Processor</li>
+                                                                    <li>Tax Code Maintenance</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 13</p>
@@ -358,12 +429,13 @@
                                                                             target="_blank">Reports</a>
                                                                     </div>
                                                                 </summary>
+                                                                <p>Generate Various of Report by Using SmartLegal</p>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_2">
+                                                    <tr id="page_2 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Chapter 14</p>
@@ -377,12 +449,22 @@
                                                                             target="_blank">Maintenance</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>Maintenance</li>
+                                                                    <li>Users and Groups</li>
+                                                                    <li>User Setting</li>
+                                                                    <li>Accounting</li>
+                                                                    <li>Tax</li>
+                                                                    <li>File Types and Templates</li>
+                                                                    <li>Reporting</li>
+                                                                    <li>System</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_3">
+                                                    <tr id="page_3 ctg_1">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>Merge</p>
@@ -396,12 +478,16 @@
                                                                             target="_blank">Mail Merge</a>
                                                                     </div>
                                                                 </summary>
+                                                                <div>
+                                                                    <li>Mail Merge</li>
+                                                                    <li>Create Templates</li>
+                                                                </div>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_3">
+                                                    <tr id="page_3 ctg_2">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>File Master</p>
@@ -415,12 +501,13 @@
                                                                             target="_blank">File Spreadsheet</a>
                                                                     </div>
                                                                 </summary>
+                                                                <p>Generate and Create File Details Spreadsheet</p>
                                                             </details>
 
                                                         </td>
                                                     </tr>
 
-                                                    <tr id="page_3">
+                                                    <tr id="page_3 ctg_3">
                                                         <td>
                                                             <div class="chapter">
                                                                 <p>File Master</p>
@@ -434,6 +521,7 @@
                                                                             target="_blank">Create File</a>
                                                                     </div>
                                                                 </summary>
+                                                                <p>Create Various of File Master</p>
                                                             </details>
 
                                                         </td>

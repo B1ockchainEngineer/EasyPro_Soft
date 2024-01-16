@@ -2,6 +2,12 @@ body{
     background:#dcdcdc;
     margin-top:20px;}
 
+.first_title{
+  color: #3c4142;
+  width: 100%;
+  text-align: center;
+}
+
 .widget-26 {
   color: #3c4142;
   font-weight: 400;

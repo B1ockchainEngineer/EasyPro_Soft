@@ -33,20 +33,9 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row no-gutters">
-                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>Location</option>
-                                                <option>London</option>
-                                                <option>Boston</option>
-                                                <option>Mumbai</option>
-                                                <option>New York</option>
-                                                <option>Toronto</option>
-                                                <option>Paris</option>
-                                            </select>
-                                        </div>
                                         <div class="col-lg-8 col-md-6 col-sm-12 p-0">
                                             <input type="text" placeholder="Search..." class="form-control" id="search"
-                                                name="search">
+                                                name="search" onkeyup="myFunction()">
                                         </div>
                                         <div class="col-lg-1 col-md-3 col-sm-12 p-0">
                                             <button type="submit" class="btn btn-base">
@@ -91,7 +80,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="result-body">
+                                    <div class="result-body" id="mySearch">
                                         <div class="table-responsive">
                                             <table class="table widget-26">
                                                 <tbody>

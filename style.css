@@ -2,6 +2,14 @@ body{
     background:#dcdcdc;
     margin-top:20px;}
 
+#first_page{
+  display: table-row;
+}    
+
+#second_page{
+  display: none;
+}
+
 .first_title{
   color: #3c4142;
   width: 100%;

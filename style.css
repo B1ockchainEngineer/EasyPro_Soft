@@ -453,3 +453,10 @@ a {
     font-size: 1rem;
   }
 }
+
+.videoSnip{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  width: 50%;
+}

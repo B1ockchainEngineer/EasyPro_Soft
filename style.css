@@ -2,6 +2,10 @@ body{
     background:#dcdcdc;
     margin-top:20px;}
 
+.chapter{
+  font-weight:500;
+}
+
 #page_1{
   display: table-row;
 }    

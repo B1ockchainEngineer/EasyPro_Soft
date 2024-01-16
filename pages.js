@@ -30,6 +30,9 @@ function myFunction() {
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         a = tr[i].getElementsByTagName("a")[0];
+        if (div) {
+        txtValue = div.textContent || div.innerText;
+        a = tr[i].getElementsByTagName("a")[0];
         if (a) {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {

@@ -23,19 +23,21 @@ function swapPages(pageNumber) {
 }
 
 function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
+    var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("search");
     filter = input.value.toUpperCase();
-    ul = document.getElementById("mySearch");
-    li = li.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        div = tr[i].getElementsByTagName("div")[0];
+        if (div) {
+        txtValue = div.textContent || div.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            tr[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            tr[i].style.display = "none";
         }
+        }       
     }
 }
 

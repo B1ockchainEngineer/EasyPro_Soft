@@ -60,7 +60,7 @@ body {
 }
 
 .widget-26 .widget-26-job-title a {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.875rem;
   color: #3c4142;
   line-height: 1.5;
@@ -351,8 +351,8 @@ details summary:after {
   position: absolute;
   font-size: 1.75rem;
   line-height: 0;
+  top: 5px;
   right: 0;
-  font-weight: 200;
   transform-origin: center;
   transition: 200ms linear;
 }

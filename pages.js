@@ -1,15 +1,24 @@
 
-function swapPages(mode) {
+function swapPages(pageNumber) {
 
+    var allRows = document.querySelectorAll('tr[id^="page_"]');
+    allRows.forEach(function (row) {
+        row.style.display = 'none';
+    });
 
-    if (mode == 1) {
-        $("#first_page").css("display", "table-row");
-        $("#second_page").css("display", "none");
+    // Show rows of the selected page
+    var selectedPageRows = document.querySelectorAll('#page_' + pageNumber);
+    selectedPageRows.forEach(function (row) {
+        row.style.display = 'table-row';
+    });
 
-    } else if (mode == 2) {
-        $("#first_page").css("display", "none");
-        $("#second_page").css("display", "table-row");
-    }
+    // Update active class for pagination
+    var paginationItems = document.querySelectorAll('.page-item');
+    paginationItems.forEach(function (item) {
+        item.classList.remove('active');
+    });
 
+    var activePaginationItem = document.querySelector('.page-item-' + pageNumber);
+    activePaginationItem.classList.add('active');
 }
 

@@ -2,11 +2,11 @@ body{
     background:#dcdcdc;
     margin-top:20px;}
 
-#first_page{
+#page_1{
   display: table-row;
 }    
 
-#second_page{
+#page_2{
   display: none;
 }
 

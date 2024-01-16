@@ -35,7 +35,7 @@
                                     <div class="">
                                         <div>
                                             <input type="text" placeholder="Search..." class="form-control" id="search"
-                                                name="search" onkeyup="search()">
+                                                name="search" onkeyup="myFunction()">
                                         </div>
 
                                     </div>
@@ -60,7 +60,8 @@
                                                 <div class="result-actions">
                                                     <div class="result-sorting">
                                                         <span>Category:</span>
-                                                        <select class="form-control border-0" id="categoryOption" onchange="category()">
+                                                        <select class="form-control border-0" id="categoryOption" onchange="category()" >
+                                                            <option value="">All</option>
                                                             <option value="chapter">Chapter</option>
                                                             <option value="merge">Merge</option>
                                                             <option value="file master">File Master</option>
@@ -72,7 +73,7 @@
                                     </div>
                                     <div class="result-body" id="mySearch">
                                         <div class="table-responsive">
-                                            <table class="table widget-26" id="myTable">
+                                            <table class="table widget-26" >
                                                 
                                                 <thead style="outline-style: solid;">
                                                     <td>
@@ -88,7 +89,7 @@
                                                     </td>
                                                 </thead>
                                                 
-                                                <tbody>
+                                                <tbody id="myTable">
 
                                                     <tr id="page_1 ctg_1">
                                                         <td>

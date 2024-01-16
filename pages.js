@@ -22,7 +22,7 @@
 //     activePaginationItem.classList.add('active');
 // }
 
-function search(mode) {
+function myFunction() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("search");
     filter = input.value.toUpperCase();
@@ -39,7 +39,6 @@ function search(mode) {
         }
         }       
     }
-    
 }
 
 function category() {

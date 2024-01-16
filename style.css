@@ -6,7 +6,7 @@ body{
   font-weight: 500;
 }
 
-#page_1 {
+/* #page_1 {
   display: table-row;
 }
 
@@ -16,7 +16,7 @@ body{
 
 #page_3 {
   display: none;
-}
+} */
 
 .first_title {
   font-size: 26px;

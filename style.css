@@ -351,8 +351,8 @@ details summary:after {
   position: absolute;
   font-size: 1.75rem;
   line-height: 0;
+  top: 5px;
   right: 0;
-  font-weight: 200;
   transform-origin: center;
   transition: 200ms linear;
 }

@@ -41,6 +41,25 @@ function myFunction() {
     }
 }
 
+function myFunction2() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("td");
+    for (i = 0; i < tr.length; i++) {
+        a = tr[i].getElementsByTagName("span")[0];
+        if (a) {
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+
 function category() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("categoryOption");

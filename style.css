@@ -366,6 +366,9 @@ details summary {
   outline: 0;
 }
 
+details li{
+  width: 50%;
+}
 
 a {
   text-decoration: none;

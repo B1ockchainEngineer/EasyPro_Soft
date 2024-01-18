@@ -449,8 +449,19 @@ body {
     max-width: 100%;
     vertical-align: middle;
     width: 100%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  
+  .videoSnip:hover {
+    opacity: .6;
   }
 
  span{
     font-size: 13px;
   }
+
+
+  

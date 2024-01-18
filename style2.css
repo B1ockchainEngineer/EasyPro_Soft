@@ -450,3 +450,7 @@ body {
     vertical-align: middle;
     width: 100%;
   }
+
+ span{
+    font-size: 13px;
+  }

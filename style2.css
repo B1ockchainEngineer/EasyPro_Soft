@@ -49,6 +49,9 @@ body {
     border: 0;
   }
   
+  .widget-26 td {
+    padding: 10px;
+  }
   
   .widget-26 .widget-26-job-title {
     min-width: 200px;
@@ -443,7 +446,8 @@ body {
   
   .videoSnip{
     height: auto;
-    max-width: 50%;
+    max-width: 100%;
     vertical-align: middle;
-    width: 40%;
+    width: 100%;
+    
   }

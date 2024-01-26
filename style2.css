@@ -446,7 +446,7 @@ a {
 
 .videoSnip {
   max-height: 134.48px;
-  height: auto;
+  height: 134.48px;
   max-width: 100%;
   vertical-align: middle;
   width: 100%;

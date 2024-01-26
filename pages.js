@@ -48,7 +48,7 @@ function myFunction2() {
     table = document.getElementById("myTable");
     tr = table.getElementsByTagName("td");
     for (i = 0; i < tr.length; i++) {
-        a = tr[i].getElementsByTagName("span")[0];
+        a = tr[i].getElementsByTagName("a")[0];
         if (a) {
             txtValue = a.textContent || a.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
